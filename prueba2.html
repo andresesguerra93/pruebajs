@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+            var name = null;
+            var subject = null;
+            var email = null;  
+            var phone = null;
+            var message = null;
+        
+            name = document.getElementById("w3lName").value;
+            subject = document.getElementById("w3lSubject").value;
+            email = document.getElementById("w3lSender").value;
+            phone = document.getElementById("w3lPhone").value;
+            message= document.getElementById("w3lMessage").value;
+          /// verificacion datos vacios
+          if ("" != name && "" != subject && "" != email &&"" !=phone &&"" !=message &&"") {
+             document.getElementById('w3lName').innerHTML = nombre;
+            document.getElementById('w3lSubject').innerHTML = subject;
+             document.getElementById('w3lSender').innerHTML = email;
+             document.getElementById('w3lPhone').innerHTML = phone;
+             document.getElementById('w3lMessage').innerHTML = message;
+             
+             } else {
+            alert('Ingrese todos los datos');
+            
+             }
+
+        
+     </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-lg-8 form-inner-cont">
+        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+            <div class="form-grids">
+                <div class="form-input">
+                    <input type="text" name="w3lName" id="w3lName" placeholder="Enter your name *"
+                        required="" />
+                </div>
+                <div class="form-input">
+                    <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Enter subject "
+                        required />
+                </div>
+                <div class="form-input">
+                    <input type="email" name="w3lSender" id="w3lSender" placeholder="Enter your email *"
+                        required />
+                </div>
+                <div class="form-input">
+                    <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Enter your Phone Number *"
+                        required />
+                </div>
+            </div>
+            <div class="form-input">
+                <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your query here"
+                    required=""></textarea>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-style btn-primary">Submit Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
